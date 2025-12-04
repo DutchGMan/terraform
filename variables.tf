@@ -15,13 +15,13 @@ variable "organization_name" {
 
 variable "region" {
   description = "The region where the resources are created."
-  default     = "eu-west-1"
+  default     = "eu-north-1"
 }
 
 variable "instance_name_prefix" {
   description = "Prefix for the name tag of EC2 instances (* Required)"
   type        = string
-  nullable    = false
+  default    = "GBerg" 
 }
 
 variable "instance_type" {
